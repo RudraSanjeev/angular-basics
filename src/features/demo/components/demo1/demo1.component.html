@@ -1,0 +1,7 @@
+<div class="parentContainer">
+  <h3>HI,{{ childName }} this one from parent</h3>
+  <ChildDemo
+    [name]="parentName"
+    (childEvent)="receiveChildName($event)"
+  ></ChildDemo>
+</div>
