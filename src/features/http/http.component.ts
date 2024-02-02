@@ -65,6 +65,7 @@ export class HttpComponent {
         if (error) {
           alert('not found !');
         }
+
         console.log(error);
       },
     });
