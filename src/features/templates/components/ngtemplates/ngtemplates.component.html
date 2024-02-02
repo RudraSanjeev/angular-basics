@@ -1,0 +1,13 @@
+<ng-template #firstTemplate>
+  <h3>hi, this is from ng templates</h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum reiciendis
+    illo earum atque quas?
+  </p>
+</ng-template>
+
+<!-- it don't add extra div in the dom -->
+<ng-container
+  class="ngtemplatesContainer"
+  *ngTemplateOutlet="firstTemplate"
+></ng-container>

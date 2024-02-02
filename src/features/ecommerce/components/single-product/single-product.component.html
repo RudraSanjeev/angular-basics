@@ -1,0 +1,14 @@
+<div class="singleProductContainer">
+  <div class="productImg">
+    <img [src]="singleProduct.imageURL" alt="imgErr" />
+  </div>
+  <div class="productInfo">
+    <span class="title"> {{ singleProduct.name }} </span>
+    <span class="desc"> {{ singleProduct.description.substring(0, 10) }} </span>
+    <span class="price">${{ singleProduct.price }}</span>
+    <span
+      [ngClass]="singleProduct.is_in_inventory ? 'inStock' : 'outOfStock'"
+      >{{ singleProduct.is_in_inventory ? "inStock" : "out of stock" }}</span
+    >
+  </div>
+</div>

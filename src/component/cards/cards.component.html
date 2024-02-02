@@ -1,0 +1,10 @@
+<div class="cardsContainer">
+  <app-card
+    *ngFor="let cardItem of cardsData"
+    [card]="cardItem"
+    (messageEvent)="parentReceived($event)"
+  ></app-card>
+  <div class="childMessage">
+    <span>{{ childMessage }}</span>
+  </div>
+</div>

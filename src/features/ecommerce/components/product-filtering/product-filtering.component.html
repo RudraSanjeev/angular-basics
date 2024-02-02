@@ -1,0 +1,35 @@
+<div class="productFilteringContainer">
+  <span class="productFilteringOption">
+    <label for="all">All</label>
+    <input
+      type="radio"
+      name="stockStatus"
+      id="all"
+      value="all"
+      [(ngModel)]="selected"
+      (change)="handleChangeStock()"
+    />
+  </span>
+  <span class="productFilteringOption">
+    <label for="inStock">inStock</label>
+    <input
+      type="radio"
+      name="stockStatus"
+      id="inStock"
+      value="inStock"
+      [(ngModel)]="selected"
+      (change)="handleChangeStock()"
+    />
+  </span>
+  <span class="productFilteringOption">
+    <label for="outOfStock">out of Stock</label>
+    <input
+      type="radio"
+      name="stockStatus"
+      id="outOfStock"
+      value="outOfStock"
+      [(ngModel)]="selected"
+      (change)="handleChangeStock()"
+    />
+  </span>
+</div>

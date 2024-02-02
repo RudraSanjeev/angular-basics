@@ -4,4 +4,38 @@
     [name]="parentName"
     (childEvent)="receiveChildName($event)"
   ></ChildDemo>
+
+  <div class="viewChild">
+    <p #viewChildPara>this is first viewchild</p>
+    <p #viewChildPara class="secondPara">this is second viewchild</p>
+    <p #viewChildPara>this is third viewchild</p>
+    <button (click)="getViewChild()">get view chid</button>
+  </div>
+
+  <div
+    class="ngTemplate"
+    #lazyContent
+    style="margin: 40px 10px; display: flex; flex-direction: column; gap: 20px"
+    (click)="getNgTemplate()"
+  >
+    <h3>this is ngTemplate content var</h3>
+    <p>ngTemplate description</p>
+  </div>
+  <div class="onInit">
+    <input type="text" #username />
+    <button>send</button>
+  </div>
+
+  <ng-template #myFirstTemplate>
+    <h3>NG TEMPLATE</h3>
+    <p>ng template para</p>
+  </ng-template>
+
+  <ng-container *ngTemplateOutlet="myFirstTemplate"></ng-container>
+  <div class="ngContainer">
+    <span *ngIf="flag; else mysecondTemplate">click here to get output</span>
+  </div>
 </div>
+<ng-template #mysecondTemplate>
+  <h3>else part is shown here</h3>
+</ng-template>

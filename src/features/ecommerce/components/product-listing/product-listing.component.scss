@@ -1,0 +1,18 @@
+.productListingContainer {
+  display: flex;
+  flex-direction: column;
+
+  .productListingProductFiltering {
+    display: flex;
+  }
+
+  .productListingWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    //   background: yellow;
+    gap: 10px;
+    width: 100%;
+  }
+}

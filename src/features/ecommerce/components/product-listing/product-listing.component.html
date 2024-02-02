@@ -1,0 +1,11 @@
+<div class="productListingContainer">
+  <div class="productListingProductFiltering">
+    <ProductFiltering (stockEvent)="receiveStock($event)" />
+  </div>
+  <div class="productListingWrapper">
+    <SingleProduct
+      *ngFor="let product of productListing"
+      [singleProduct]="product"
+    />
+  </div>
+</div>

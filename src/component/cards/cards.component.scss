@@ -1,0 +1,11 @@
+.cardsContainer {
+  display: flex;
+  border: 0.5px solid #ddd;
+  border-radius: 10px;
+  width: 84.2%;
+  min-height: 40vh;
+  margin: auto;
+  padding: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
+}

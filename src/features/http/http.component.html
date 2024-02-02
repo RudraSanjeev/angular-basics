@@ -1,0 +1,47 @@
+<ul class="listContainer" setDisabledDirective [setDisabled]="disabledStyle">
+  <li>one</li>
+  <li>two</li>
+  <li>three</li>
+</ul>
+
+<div class="addButton" setBorder>
+  <button (click)="createNewPost()" setBackground>add new post</button>
+</div>
+<!-- <div
+  class="singlePost"
+  style="
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+  "
+  *ngIf="newPost"
+>
+  <span> <strong>Title: </strong>{{ newPost.title }} </span>
+  <span> <strong>Body: </strong>{{ newPost.body }} </span>
+</div> -->
+<div class="httpContainer">
+  <div
+    class="singlePost"
+    *ngFor="let post of posts"
+    style="
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 10px;
+    "
+  >
+    <span> <strong>Title: </strong>{{ post.title }} </span>
+    <span> <strong>Body: </strong>{{ post.body }} </span>
+  </div>
+</div>
+
+<div class="">
+  <input type="text" setInput />
+</div>

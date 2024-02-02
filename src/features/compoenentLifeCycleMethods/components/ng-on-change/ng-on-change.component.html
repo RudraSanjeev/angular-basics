@@ -1,0 +1,7 @@
+<div class="ngOnChangeContainer">
+  <span class="ngOnChangeItem">
+    <input type="text" name="name" #username />
+    <button (click)="showCreds(username)">submit</button>
+  </span>
+  <app-child [username]="uname"></app-child>
+</div>

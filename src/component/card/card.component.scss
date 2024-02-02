@@ -1,0 +1,58 @@
+.singleCardContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  gap: 5px;
+  background: #f3f3f3;
+
+  .singleCardImgBox {
+    flex: 1;
+    border-radius: 10px;
+
+    max-height: 150px;
+    overflow: hidden;
+    img {
+      width: 200px;
+      height: 150px;
+      object-fit: contain;
+    }
+  }
+
+  .singleCardInfoBox {
+    flex: 1;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    .singleCardInfoTitle {
+      color: #222;
+    }
+    .singleCardInfoDesc {
+      color: #222;
+    }
+  }
+
+  .singleCardActions {
+    .singleCardActionData {
+      margin: 0 10px;
+    }
+    .singleCardButtonAction {
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background: rgb(159, 154, 154);
+      color: #222;
+      cursor: pointer;
+      color: #fff;
+      font-weight: 600;
+
+      &:disabled {
+        background: rgb(173, 70, 70);
+      }
+    }
+  }
+}

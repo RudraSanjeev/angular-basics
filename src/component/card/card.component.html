@@ -1,0 +1,27 @@
+<div class="singleCardContainer">
+  <div class="singleCardImgBox">
+    <img [src]="card.imgUrl" alt="imgErr" />
+  </div>
+  <div class="singleCardInfoBox">
+    <span class="singleCardInfoTitle">{{ card.title }}</span>
+    <span class="singleCardInfoDesc">{{ card.desc }}</span>
+  </div>
+  <div class="singleCardActions">
+    <button
+      [disabled]="cardCounter == 0"
+      class="singleCardButtonAction"
+      (click)="decrement()"
+    >
+      del
+    </button>
+    <span class="singleCardActionData">{{ cardCounter }}</span>
+    <button class="singleCardButtonAction" (click)="increment()">add</button>
+    <input
+      type="text"
+      name="search"
+      [value]="message"
+      (change)="searchInput($event)"
+    />
+    <button (click)="sendMessage()">raise event</button>
+  </div>
+</div>

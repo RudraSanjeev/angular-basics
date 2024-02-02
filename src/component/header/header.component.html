@@ -1,0 +1,14 @@
+<div class="headerContainer">
+  <div class="logo">
+    <img src="../../assets/logo.png" alt="imgErr" />
+  </div>
+  <div class="search">
+    <input type="text" placeholder="Search Here" #searchInput />
+    <button (click)="handleSearch(searchInput)">Search</button>
+  </div>
+  <div class="navLinks">
+    <ul>
+      <li *ngFor="let item of navLinks">{{ item }}</li>
+    </ul>
+  </div>
+</div>

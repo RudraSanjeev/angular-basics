@@ -1,0 +1,28 @@
+<div class="loginContainer">
+  <h1>Login</h1>
+  <form (submit)="onsubmit($event)">
+    <span class="formElement">
+      <label for="username"> Username: </label>
+      <input
+        type="text"
+        (input)="userName($event)"
+        value="{{ username }}"
+        name="username"
+        placeholder="Username"
+      />
+    </span>
+    <span class="formElement">
+      <label for="Password"> Password: </label>
+      <input
+        type="text"
+        (input)="password($event)"
+        name="password"
+        value="{{ passwordData }}"
+        placeholder="Password"
+      />
+    </span>
+    <span class="formElement">
+      <button type="submit">Submit</button>
+    </span>
+  </form>
+</div>
